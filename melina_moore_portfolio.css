@@ -1,0 +1,347 @@
+/*
+color palette 
+#F7EFDA Parchment 
+#BADD7F Pistachio
+#efaca5 Melon
+#3e8440 fern green
+
+petal pink #d2a1a2
+moss #83876f
+*/
+
+/*------- The font: -------*/
+.urbanist {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+.main{
+    background-color: whitesmoke;
+    margin: 0%;
+}
+/*---------------------------- NAVBAR ----------------------------*/
+.navbar {
+    font-family:  "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 20% 1% 20%;
+    background-color: black;
+    /*border-bottom: 1% solid #eaeaea;*/
+}
+.nav-item {
+    color: white; 
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+/*------- Grid -------*/
+.grid-container {
+    margin-top: 4%;
+    font-family:  "Urbanist", sans-serif;
+    display: grid;
+    grid-template-columns: 5.5% 20% 6% 12.3% 12.3% 6% 12.5% 12.5% 5.5%;
+    grid-template-rows: 9vw 10vw 6vw 9vw 6vw 11vw 16vw 4vw 4vw 35vw 8vw 6vw 10vw 5vw;
+    column-gap: .9vw;
+    row-gap: 0; 
+}
+.grid-item {
+    font-size: 1vw;
+}
+/*---------------------------- HOME ----------------------------*/
+.intro {
+    grid-area: 1/2/2/6;
+    font-size: 8.6vw;
+    font-weight: 200;
+    margin-left: auto;
+}
+.hey {
+    font-weight: 900; 
+}
+.intro-name {
+    grid-area: 2/2/3/6;
+    font-size: 8.6vw;
+    margin-left: auto;
+}
+.name {
+    align-content: right;
+    background-color: #F6d9db;
+    border-right: .6vw solid #f5959c;
+}
+/*------- Images -------*/
+.hand-cursor-pic {
+    margin-top: -.8vw;
+    margin-left: -2.8vw; 
+    grid-area: 3/6/4/7;
+    width:85%;
+}
+.profile-pic {
+    margin:5%;
+    grid-area: 1/7/3/9;
+    width: 100%;
+    border-radius: 10px;
+    border: 10px solid black;
+}
+/*------- Buttons -------*/
+.buttons-class{
+    grid-area: 13/1/14/10;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6d9db;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+button {
+    background-color: #F6d9db;;
+    font-family:  "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer;
+    width: 10vw; 
+    padding: .5vw;
+    cursor: pointer;
+}
+/*------- Blank space -------*/
+.empty{
+    background-color: white;
+}
+/*------- smaller about me -------*/
+.about-me {
+    margin-top: 3vw; 
+    grid-area: 3/2/4/5;
+    font-size: 1.5vw;
+}
+
+/*---------------------------- Project AREA ----------------------------*/
+.row-5 {
+    border-top: .4vw solid #f5959c;
+    background-color: black;
+    grid-area: 5/1/6/10;
+}
+.project-tab { 
+    display: flex;
+    justify-content: center;
+    margin-top: 6.6vw;
+    margin-bottom: 5.65vw;
+    padding-top: .3vw;
+    grid-area: 4/2/6/3;
+    font-size: 1.45vw; 
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: .4vw solid #f5959c;
+    border-left: .4vw solid #f5959c;
+    border-right: .4vw solid #f5959c;
+    color: white; 
+    font-weight: bold;
+}
+.project-section{
+    background-color: black;
+    grid-area: 6/1/8/7;
+    display : flex; 
+    justify-items: center;
+}
+.project-filter-section {
+    background-color: black;
+}
+.project-filter-buttons{
+    margin-left: 12vw; 
+    margin-right: 1vw; 
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.2vw;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    color: white; 
+    cursor: pointer;
+    text-justify: center;
+    text-align: center;
+
+}
+.project-grid-container{
+    margin-left: -5%;
+    grid-area: 6/3/8/6;
+    background-color: black;
+    color: white; 
+}
+.project-grid-container-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 8vw 8vw;
+    background-color: black;
+    color: white; 
+    justify-content: stretch;
+    align-items: stretch;
+}
+.project-button {
+    background-color: white;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer;
+    place-self: center;
+    width: 14vw;
+    height: 7.5vw;
+}
+#project-details-section{
+    background-color: black;
+    color: white; 
+    grid-area: 6/6/8/10;
+    margin-left: 2%;
+    display: flex;
+    align-items: stretch; 
+    justify-content: left;
+}
+.project-deets {
+    background-color: #F6d9db;
+    border: .4vw groove white;
+    font-size: 1.1vw;
+    border-radius: 10px;
+    color: black;
+    /*padding: 1vw;*/
+    margin-right: 1vw;
+    margin-bottom: 3vw;
+    padding:1vw;
+    width: 22vw;
+    height: 20vw; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+h1{
+    margin-top: -0.5vw; 
+    background: #F6d9db;
+    height: 8vh;
+    font-size: 1.8vw;
+    width: 100%;
+    text-align: center;
+}
+p{
+    margin-top:-1vw;
+    flex-wrap: wrap;
+    font-size: 1.2vw;
+    text-align:left;
+}
+
+.row-8 {
+    border-bottom: .4vw solid #f5959c;
+    background-color: black;
+    grid-area: 8/1/9/10;
+}
+/*
+#636464
+#d4ccdc
+#aca8b8
+*/
+/*---------------------------- EXPERIENCE AREA ----------------------------*/
+.experience-tab { 
+    display: flex;
+    justify-content:center;
+    margin: 1vw 2vw 0vw 2vw; 
+    grid-area: 8/7/9/9;
+    font-size: 1.45vw; 
+    background-color: #636464;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: .4vw solid #f5959c;
+    border-left: .4vw solid #f5959c;
+    border-right: .4vw solid #f5959c;
+    color: white; 
+    font-weight: bold;
+    padding: 2% 12% 0% 12%; 
+    
+}
+.row-9 {
+    background-color: #636464;
+    grid-area: 9/1/10/10;
+}
+.experience-section-border-1{
+    grid-area: 10/1/11/3;
+    background-color: #636464;
+    margin-right: -1vw;
+    
+}
+.experience-section-border-2{
+    grid-area: 10/9/11/10;
+    background-color: #636464;
+    margin-left: -1vw;
+}
+.experience-section-1 {
+    grid-area: 10/3/11/9;
+    background-color: #636464;
+    margin-left: -10vw;
+    border-left: .7vw solid white;
+    display:grid; 
+    justify-content: space-around;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 20fr; 
+    align-items: flex-end;
+}
+.time-button{
+    margin-left: -1.7vw; 
+    justify-self: start;
+    background-color:   #F6d9db;
+    border: .4vw solid #f5959c;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+.time-button:hover + .timeline-year{
+    transform: scale(1.25, 1.25);
+    cursor:pointer;
+}
+.time-button:hover {
+    transform: scale(1.25, 1.25);
+    cursor:pointer;
+}
+h2{
+    color: white;
+    font-size: 2vw;
+    margin-bottom: -.01vw;
+    text-justify: end;
+    text-align: left;
+}
+.timeline-details{
+    color: white;
+    margin-bottom: 0.2vw;
+    font-size: 1.5vw;
+}
+.experience-section-2 {
+    grid-area: 11/1/12/10;
+    background-color: #636464;
+}
+/*.experience-section-3 {
+    grid-area: 12/1/13/10;
+    background-color: #636464;
+}*/
+
+/*---------------------------- Contacts AREA ----------------------------*/
+.row-12 {
+    border-top: .4vw solid #f5959c;
+    background-color: #F6d9db;
+    grid-area: 12/1/13/10;
+}
+.contact-tab { 
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5vw;
+    margin-bottom: -0.4vw;
+    padding-top: .3vw;
+    grid-area: 11/2/12/3;
+    font-size: 1.45vw; 
+    background-color: #F6d9db;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: .4vw solid #f5959c;
+    border-left: .4vw solid #f5959c;
+    border-right: .4vw solid #f5959c;
+    color: black; 
+    font-weight: 800;
+}
+
+.row-13 {
+    background-color: #F6d9db;
+    grid-area: 14/1/15/10;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melina Moore</title>
+    <link rel="stylesheet" href="melina_moore_portfolio.css">
+    <script src="melina_moore_portfolio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "main">
+        <header class="navbar">
+            <div class="nav-item">• HOME •</div>
+            <div class="nav-item">• PROJECTS •</div>
+            <div class="nav-item">• EXPERIENCE •</div>
+            <div class="nav-item">• CONTACT •</div>
+        </header>
+
+        <div class="grid-container">
+            <div class="intro">
+                <span class= "hey"> HI,</span> IT'S
+            </div>
+            <div class="intro-name"><span class="name">M E L I N A</span></div>
+            
+            <div class="grid-item"><span class="empty"> </span> </div>
+            <div class="grid-item"><span class="empty"> </span> </div>
+            
+            <img src="melina_pic.png" class="profile-pic">
+            
+            <img src="hand-cursor.png" class="hand-cursor-pic">
+            
+            <div class="about-me"> 
+                I am a senior computer engineering student graduating 
+                from University of Houston in May 2025. I am passionate 
+                about finding creative solutions, sewing, bullet journaling, and learning.
+            </div>
+            <div class="row-5"> </div>
+            <!-- ***************************   PROJECTS TAB STARTS   *************************** -->
+            <div class="project-tab">• P R O J E C T S •</div> 
+            <div class="project-section">
+                <div class="project-filter-section"> 
+                    &ensp;<button class = "project-filter-buttons" id="hardware-button" onclick = "changeProjects(1, this)">• Hardware •</button><br>
+                    &ensp;<button class = "project-filter-buttons" id="software-button" onclick = "changeProjects(2, this)">• Software •</button><br>
+                    &ensp;<button class = "project-filter-buttons" id="embedded-button" onclick = "changeProjects(3, this)">• Embedded •</button><br>
+                    &ensp;<button class = "project-filter-buttons" id="creative-button" onclick = "changeProjects(4, this)">• Creative •</button><br>
+                </div>
+                <!-- add another grid in here? -->
+            </div>
+            <div class="project-grid-container">
+                <div class="project-grid-container-grid">
+                <button class="project-button" id="button-1" onclick = "changeDetails(1)" >Coffee and Tea Level Indicator</button>
+                <button class="project-button" id="button-2" onclick = "changeDetails(2)">Binary Calculator</button>
+                <button class="project-button" id="button-3" onclick = "changeDetails(3)">Traffic Light Simulator</button>
+                <button class="project-button" id="button-4" onclick = "changeDetails(4)" style="background-color: black; border-style: solid;"></button>
+                </div>
+            </div>
+            <div id="project-details-section">
+                <div class="project-deets" id="proyecto">
+                    <h1 id="project-details-title">software project</h1>
+                    <p id="project-details-text">
+                        Designed a circuit using Multisim to indicate liquid levels in large containers of coffee and tea, adapting a pre-existing schematic for different beverage resistivities. 
+                        Assembled the circuit, soldering components such as LEDs, resistors, and BJTs to be a functional device.
+                    </p>
+                </div>
+            </div>
+            <div class="row-8"> </div>
+            <!-- ***************************   EXPERIENCE TAB STARTS   *************************** -->
+            <div class="experience-tab">• E X P E R I E N C E •</div>
+            <div class="row-9"> </div>
+            <div class="experience-section-border-1"></div>
+            <div class="experience-section-2"></div>
+            <div class="experience-section-1">
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2017</h2> 
+                    <p class ="timeline-details">Rotary International - Student Ambassador in Três Lagoas, Mato Grosso Do Sul, Brazil </p> 
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2019</h2> 
+                    <p class ="timeline-details">Recieved Associates of Science from Galveston College</p> 
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2020</h2> 
+                    <p class ="timeline-details">Gained Level C1 fluency in Spanish from Universidad Veracruzana in Xalapa, Veracruz, Mexico</p> 
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2021</h2> 
+                    <p class ="timeline-details">Enrolled in Cullen College of Engineering at University of Houston</p> 
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2022</h2> 
+                    <p class ="timeline-details">Began work as a Teaching Assistant for Introduction to Computing and Problem-solving for Engineers</p> 
+                    <span class="time-button"></span>
+                    <h2 class="timeline-year">2023</h2> 
+                    <p class ="timeline-details">Began work as a Curriculum Assistant for Introduction to Computing and Problem-solving for Engineers</p>
+            </div> 
+            <div class="experience-section-3"></div>
+            <div class="experience-section-border-2"></div>
+            <!-- ***************************   CONTACT TAB STARTS   *************************** -->
+            <div class="row-12">  </div>
+            <div class="row-12-side-right">  </div>
+            <div class="buttons-class">
+                <a href="https://www.linkedin.com/in/melina-moore-52515b24b"><button>LinkedIn</button></a>
+                <a href="https://www.github.com/melinabobina"><button>GitHub</button></a>
+                <a href="MelinaMooreResumeFall2024.pdf"><button>Resume</button></a>
+                <a href="mailto:mdmoor21@cougarnet.uh.edu"><button>Email</button></a>
+            </div>
+            <div class="row-12-side-left">  </div> 
+            <div class="contact-tab">• C O N T A C T •</div>
+            <div class="row-13"></div>
+            <div class="grid-item"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
